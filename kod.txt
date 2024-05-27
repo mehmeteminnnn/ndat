@@ -1,0 +1,90 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Program Öğrenme Çıktısı İlişkisi'),
+        ),
+        body: Center(
+          child: DataTableExample(),
+        ),
+      ),
+    );
+  }
+}
+
+class DataTableExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: DataTable(
+        columns: [
+          DataColumn(label: Text('')),
+          DataColumn(label: Text('P.Ç. 1')),
+          DataColumn(label: Text('P.Ç. 2')),
+          DataColumn(label: Text('P.Ç. 3')),
+          DataColumn(label: Text('P.Ç. 4')),
+          DataColumn(label: Text('P.Ç. 5')),
+          DataColumn(label: Text('P.Ç. 6')),
+          DataColumn(label: Text('P.Ç. 7')),
+          DataColumn(label: Text('P.Ç. 8')),
+          DataColumn(label: Text('P.Ç. 9')),
+          DataColumn(label: Text('P.Ç. 10')),
+          DataColumn(label: Text('P.Ç. 11')),
+        ],
+        rows: [
+          DataRow(cells: [
+            DataCell(Text('Ö.Ç. 1')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('Ö.Ç. 2')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('Ö.Ç. 3')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+            DataCell(Text('0')),
+          ]),
+        ],
+      ),
+    );
+  }
+}
